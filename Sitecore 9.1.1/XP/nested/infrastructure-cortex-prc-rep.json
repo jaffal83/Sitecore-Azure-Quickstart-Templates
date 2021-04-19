@@ -38,7 +38,7 @@
     },
     "sitecoreSKU": {
       "type": "string",
-      "allowedValues": [ "Extra Small", "Small", "Medium", "Large", "Extra Large" ],
+      "allowedValues": [ "Extra Small", "Small", "Medium", "Large", "Extra Large", "Premium" ],
       "defaultValue": "Extra Small",
       "metadata": {
         "description": "Sitecore SKU controls the sizes and service levels of the provisioned resources"
@@ -167,6 +167,23 @@
           }
         },
         "Extra Large": {
+          "processingEngineTasksSqlDatabase": {
+            "Edition": "Standard",
+            "MaxSize": "268435456000",
+            "ServiceObjectiveLevel": "S0"
+          },
+          "processingEngineStorageSqlDatabase": {
+            "Edition": "Standard",
+            "MaxSize": "268435456000",
+            "ServiceObjectiveLevel": "S3"
+          },
+          "reportingSqlDatabase": {
+            "Edition": "Standard",
+            "MaxSize": "268435456000",
+            "ServiceObjectiveLevel": "S3"
+          }
+        },
+		"Premium": {
           "processingEngineTasksSqlDatabase": {
             "Edition": "Standard",
             "MaxSize": "268435456000",
