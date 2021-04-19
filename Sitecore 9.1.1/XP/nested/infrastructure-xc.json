@@ -55,7 +55,8 @@
         "Small",
         "Medium",
         "Large",
-        "Extra Large"
+        "Extra Large", 
+		"Premium"
       ],
       "defaultValue": "Extra Small",
       "metadata": {
