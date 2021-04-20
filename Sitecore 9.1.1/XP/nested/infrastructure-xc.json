@@ -55,7 +55,8 @@
         "Small",
         "Medium",
         "Large",
-        "Extra Large"
+        "Extra Large", 
+		"Premium"
       ],
       "defaultValue": "Extra Small",
       "metadata": {
@@ -304,6 +305,49 @@
           }
         },
         "Extra Large": {
+          "xcBasicHostingPlan": {
+            "SkuName": "S3",
+            "SkuCapacity": 2
+          },
+          "xcBasicHostingPlanIsolated": {
+            "SkuName": "I2",
+            "SkuCapacity": 2
+          },
+          "xcResourceIntensiveHostingPlan": {
+            "SkuName": "S3",
+            "SkuCapacity": 4
+          },
+          "xcResourceIntensiveHostingPlanIsolated": {
+            "SkuName": "I3",
+            "SkuCapacity": 2
+          },
+          "refDataSqlDatabase": {
+            "Edition": "Standard",
+            "MaxSize": "268435456000",
+            "ServiceObjectiveLevel": "S3"
+          },
+          "shardMapManagerSqlDatabase": {
+            "Edition": "Standard",
+            "MaxSize": "268435456000",
+            "ServiceObjectiveLevel": "S0"
+          },
+          "xcShard0SqlDatabase": {
+            "Edition": "Premium",
+            "MaxSize": "268435456000",
+            "ServiceObjectiveLevel": "P2"
+          },
+          "xcShard1SqlDatabase": {
+            "Edition": "Premium",
+            "MaxSize": "268435456000",
+            "ServiceObjectiveLevel": "P2"
+          },
+          "messagingSqlDatabase": {
+            "Edition": "Standard",
+            "MaxSize": "268435456000",
+            "ServiceObjectiveLevel": "S0"
+          }
+        },
+		"Premium": {
           "xcBasicHostingPlan": {
             "SkuName": "S3",
             "SkuCapacity": 2
